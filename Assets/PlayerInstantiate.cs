@@ -32,6 +32,10 @@ public class PlayerInstantiate : MonoBehaviour
         LoadingCanvas.SetActive(false);
         Menu.SetActive(true);
     }
+    public static void loadA()
+    {
+        
+    }
 }
 
        

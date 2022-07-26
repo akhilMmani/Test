@@ -18,7 +18,10 @@ public class PlayerMovement : MonoBehaviour
     Quaternion TargetRotation;
     float Angle;
     public float TurnSpeed = 2f;
-    // Start is called before the first frame update
+    private void Awake()
+    {
+        //DontDestroyOnLoad(this.gameObject);
+    }
     void Start()
     {
         movementJoystick = FindObjectOfType<FloatingJoystick>();

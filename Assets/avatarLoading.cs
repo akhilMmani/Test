@@ -49,7 +49,7 @@ public class avatarLoading : MonoBehaviour
             args.Avatar.name = "player";
            // args.Avatar.GetComponent<Animator>().enabled = false;
             LoadingCanvas.SetActive(false);
-            
+            DontDestroyOnLoad(this.gameObject);
 
         //args.Avatar.transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
         //args.Avatar.layer = parentObject.layer;
